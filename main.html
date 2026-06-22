@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pranav roy</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div id="hero-text">
+            <h1>pranav roy</h1>
+            <p class="tagline">cs undergrad · security · low-level · competitive programming</p>
+        </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard">
+
+        <!-- ROW 1: about + right column -->
+        <div class="dashboard-row">
+
+            <section id="about" class="glass">
+                <h2>about</h2>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <p>cs undergrad at <strong>srmist</strong> (2023–2027). i build systems-level software, break things in ctfs, and write code that lives close to the metal.</p>
+                    </div>
+                    <div class="about-card">
+                        <p>interested in <strong>cybersecurity</strong>, <strong>systems programming</strong>, and <strong>competitive programming</strong>. specialist on codeforces. active on hackthebox.</p>
+                    </div>
+                    <div class="about-card">
+                        <p>published research at <strong>iraem</strong>. currently in my final year.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="dashboard-right">
+
+                <section id="player" class="glass">
+                    <h2>now playing</h2>
+                    <div class="player">
+                        <div class="player-info">
+                            <button class="player-btn" id="play-btn" aria-label="Play">▶</button>
+                            <div class="player-meta">
+                                <span class="player-title">Air on the G String</span>
+                                <span class="player-artist">J.S. Bach — BWV 1068</span>
+                            </div>
+                        </div>
+                        <div class="player-progress">
+                            <div class="progress-bar" id="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                            <span class="player-time" id="player-time">0:00</span>
+                        </div>
+                    </div>
+                    <audio id="audio" src="assets/music/airongstring.mp3" preload="metadata"></audio>
+                </section>
+
+                <section id="elsewhere" class="glass">
+                    <h2>elsewhere</h2>
+                    <div class="links-row">
+                        <a href="https://github.com/ReitardXd" target="_blank" rel="noopener">github</a>
+                        <a href="https://codeforces.com/profile/tormented_mizoguchi" target="_blank" rel="noopener">codeforces</a>
+                        <a href="https://profile.hackthebox.com/profile/019c7100-ffff-7323-980c-d8a52d88b59a" target="_blank" rel="noopener">hackthebox</a>
+                        <a href="https://leetcode.com/u/zVBNBlfW5U/" target="_blank" rel="noopener">leetcode</a>
+                        <a href="https://www.linkedin.com/in/pranav-r-4b2661209/" target="_blank" rel="noopener">linkedin</a>
+                        <a href="assets/resume/PRANAV KUNNAMKUDATH ROY_Doc.pdf" download class="resume-btn">↓ resume</a>
+                    </div>
+                </section>
+
+                <section id="setup" class="glass">
+                    <h2>setup</h2>
+                    <div class="setup-grid">
+                        <div><span class="setup-label">os</span><span>arch linux</span></div>
+                        <div><span class="setup-label">wm</span><span>dwm</span></div>
+                        <div><span class="setup-label">shell</span><span>zsh</span></div>
+                        <div><span class="setup-label">terminal</span><span>st</span></div>
+                        <div><span class="setup-label">editor</span><span>doom emacs</span></div>
+                    </div>
+                </section>
+
+                <section id="contact" class="glass">
+                    <h2>contact</h2>
+                    <a href="mailto:pranav.k.roy161@gmail.com" class="email-link">pranav.k.roy161@gmail.com</a>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- ROW 2: projects full width -->
+        <div class="dashboard-row full">
+            <section id="projects" class="glass">
+                <h2>projects</h2>
+                <div class="project-grid">
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-name">nbody</span>
+                            <a href="https://github.com/ReitardXd/nbody" target="_blank" rel="noopener" class="project-link">↗</a>
+                        </div>
+                        <p>n-body gravitational simulator with 3d rendering, bloom post-processing, barnes-hut octree, and spiral galaxy distribution.</p>
+                        <div class="project-tags"><span>C++</span><span>OpenGL</span><span>systems</span></div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-name">Rei-Shell</span>
+                            <a href="https://github.com/ReitardXd/Rei-Shell" target="_blank" rel="noopener" class="project-link">↗</a>
+                        </div>
+                        <p>a unix shell written in pure c. supports piping, redirection, and job control.</p>
+                        <div class="project-tags"><span>C</span><span>systems</span><span>unix</span></div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-name">rwm</span>
+                            <a href="https://github.com/ReitardXd/rwm" target="_blank" rel="noopener" class="project-link">↗</a>
+                        </div>
+                        <p>minimal tiling window manager written in rust.</p>
+                        <div class="project-tags"><span>Rust</span><span>systems</span><span>wm</span></div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-name">cracksmoker</span>
+                            <a href="https://github.com/ReitardXd/cracksmoker" target="_blank" rel="noopener" class="project-link">↗</a>
+                        </div>
+                        <p>hashcat gui frontend in python. makes password cracking workflows less painful.</p>
+                        <div class="project-tags"><span>Python</span><span>security</span></div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-name">NERVE</span>
+                            <a href="https://github.com/Tarang2005/CISCO-dnac" target="_blank" rel="noopener" class="project-link">↗</a>
+                        </div>
+                        <p>network automation and monitoring tool built on cisco dna center apis.</p>
+                        <div class="project-tags"><span>Python</span><span>networking</span></div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-name">Chess-game</span>
+                            <a href="https://github.com/ReitardXd/Chess-game" target="_blank" rel="noopener" class="project-link">↗</a>
+                        </div>
+                        <p>chess engine with minimax algorithm and a playable gui.</p>
+                        <div class="project-tags"><span>Python</span><span>algorithms</span></div>
+                    </div>
+
+                    <div class="project-card wip">
+                        <div class="project-header">
+                            <span class="project-name">ProctorAI</span>
+                            <span class="wip-tag">wip</span>
+                        </div>
+                        <p>ai-based proctoring system built from scratch.</p>
+                        <div class="project-tags"><span>ML</span><span>cv</span></div>
+                    </div>
+
+                    <div class="project-card wip">
+                        <div class="project-header">
+                            <span class="project-name">HolyC-reader</span>
+                            <span class="wip-tag">wip</span>
+                        </div>
+                        <p>lightweight document reader written in holyc.</p>
+                        <div class="project-tags"><span>HolyC</span><span>systems</span></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+       <footer>
+    <p>© 2026 pranav roy · <a href="https://reitardxd.tech">reitardxd.tech</a></p>
+    <div class="webring">
+        <a href="https://ring.seggs.lol/redirect?from=reitardxd&dir=prev">← prev</a>
+        <a href="https://ring.seggs.lol/random">
+            <img src="assets/images/threadlocked.png" alt="threadlocked webring" width="88" height="31">
+        </a>
+        <a href="https://ring.seggs.lol/redirect?from=reitardxd&dir=next">next →</a>
+    </div>
+</footer>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const audio = document.getElementById('audio');
+        const playBtn = document.getElementById('play-btn');
+        const progressFill = document.getElementById('progress-fill');
+        const progressBar = document.getElementById('progress-bar');
+        const playerTime = document.getElementById('player-time');
+
+        function fmt(s) {
+            const m = Math.floor(s / 60);
+            const sec = Math.floor(s % 60).toString().padStart(2, '0');
+            return `${m}:${sec}`;
+        }
+
+        playBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playBtn.textContent = '⏸';
+            } else {
+                audio.pause();
+                playBtn.textContent = '▶';
+            }
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            if (!audio.duration) return;
+            const pct = (audio.currentTime / audio.duration) * 100;
+            progressFill.style.width = pct + '%';
+            playerTime.textContent = fmt(audio.currentTime);
+        });
+
+        audio.addEventListener('ended', () => {
+            playBtn.textContent = '▶';
+            progressFill.style.width = '0%';
+            playerTime.textContent = '0:00';
+        });
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const pct = (e.clientX - rect.left) / rect.width;
+            audio.currentTime = pct * audio.duration;
+        });
+    </script>
+</body>
+</html>
