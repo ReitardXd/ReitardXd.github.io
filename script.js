@@ -1,6 +1,13 @@
-document.getElementById('splash-screen').addEventListener('click', function () {
-    this.classList.add('fade-out');
+// splash screen 
+const splash = document.getElementById('splash-screen');
+
+if (splash) {
     setTimeout(function () {
-        window.location.href = 'main.html';
-    }, 800);
-});
+        splash.classList.add('fade-out');
+        setTimeout(function () {
+            window.location.href = 'main.html';
+        }, 800);
+    }, 3000);
+
+
+}
