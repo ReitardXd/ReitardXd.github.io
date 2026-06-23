@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preload" href="assets/images/evangelion.png" as="image">
 <link rel="icon" type="image/jpeg" href="assets/images/cirno.png">
+<script data-goatcounter="https://chungus.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <button id="theme-toggle">day</button>
@@ -207,7 +209,7 @@
         </div>
 
        <footer>
-    <p>© 2026 pranav roy</p>
+    <p>© 2026 pranav roy · <span id="gc-count">...</span> visits</p>
     <div class="webring">
         <a href="https://ring.seggs.lol/redirect?from=reitardxd&dir=prev">← prev</a>
         <a href="https://ring.seggs.lol/random">
@@ -275,5 +277,11 @@
             toggle.textContent = next === 'dark' ? 'day' : 'night';
         });
     </script>
+<script>
+    fetch('https://chungus.goatcounter.com/counter/TOTAL.json')
+        .then(r => r.json())
+        .then(d => document.getElementById('gc-count').textContent = d.count)
+        .catch(() => document.getElementById('gc-count').textContent = '?');
+</script>
 </body>
 </html>
