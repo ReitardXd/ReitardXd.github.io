@@ -8,6 +8,7 @@
     <link rel="preload" href="assets/images/evangelion.png" as="image">
 </head>
 <body>
+<button id="theme-toggle">day</button>
 
     <!-- HERO -->
     <section id="hero">
@@ -229,5 +230,20 @@
             audio.currentTime = pct * audio.duration;
         });
     </script>
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const saved = localStorage.getItem('theme') || 'light';
+        document.body.dataset.theme = saved;
+        toggle.textContent = saved === 'dark' ? 'day' : 'night';
+
+        toggle.addEventListener('click', () => {
+            const next = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+            document.body.dataset.theme = next;
+            localStorage.setItem('theme', next);
+            toggle.textContent = next === 'dark' ? 'day' : 'night';
+        });
+    </script>
+</body>
+
 </body>
 </html>
