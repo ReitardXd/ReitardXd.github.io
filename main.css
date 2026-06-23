@@ -13,7 +13,7 @@
 
 :root {
     --glass-bg: rgba(0, 0, 0, 0.45);
-    --glass-blur: 20px;
+    --glass-blur: 10px;
     --glass-border: rgba(255, 255, 255, 0.12);
     --fg: #f5f2ec;
     --fg-dim: #c0b8a8;
