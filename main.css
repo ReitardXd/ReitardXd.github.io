@@ -131,6 +131,15 @@ h2 {
     color: var(--accent);
 }
 
+.about-card a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.about-card a:hover {
+    opacity: 0.7;
+}
 /* ── PROJECTS ── */
 .project-grid {
     display: grid;
