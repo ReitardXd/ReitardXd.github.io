@@ -24,7 +24,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-    background: #111 url('assets/images/evangelion.png') no-repeat center center fixed;
+    background: #111 url('assets/images/evangelion.webp') no-repeat center center fixed;
     background-size: cover;
     color: var(--fg);
     font-family: 'Matisse', serif;
@@ -423,7 +423,7 @@ footer a:hover { color: #fff; }
 }
 
 body[data-theme="dark"] {
-    background-image: url('assets/images/darkevangelion.png');
+    background-image: url('assets/images/darkevangelion.webp');
 }
 
 #theme-toggle {
