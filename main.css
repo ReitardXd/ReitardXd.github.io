@@ -450,3 +450,7 @@ body[data-theme="dark"] {
     border-color: rgba(255,255,255,0.25);
 }
 
+.webring-text {
+    font-size: 0.9rem;   /* Increase as needed */
+    margin: 0.75rem 0;
+}
