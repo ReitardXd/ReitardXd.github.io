@@ -302,7 +302,17 @@ footer a:hover { color: #fff; }
     display: block;
     image-rendering: pixelated;
 }
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+}
 
+.badges img {
+    display: block;
+    image-rendering: pixelated;
+}
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
     #hero { padding: 1.5rem; }
