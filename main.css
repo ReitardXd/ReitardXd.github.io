@@ -436,6 +436,9 @@ body[data-theme="dark"] {
     background-image: url('assets/images/darkevangelion.webp');
 }
 
+#gh-graph-section .ghgraph {
+    max-width: 100%;
+}
 #theme-toggle {
     position: fixed;
     top: 1.25rem;

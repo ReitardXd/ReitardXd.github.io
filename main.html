@@ -230,7 +230,14 @@
         </div>
     </section>
 </div>
-        <!-- ROW 3: interests full width -->
+  <!-- ROW 3: github graph full width -->
+<div class="dashboard-row full">
+    <section id="gh-graph-section" class="glass">
+        <h2>contributions</h2>
+        <div id="gh-graph"></div>
+    </section>
+</div>
+        <!-- ROW 4: interests full width -->
 <div class="dashboard-row full">
     <section id="interests" class="glass">
         <h2>interests</h2>
@@ -361,5 +368,6 @@
         .then(d => document.getElementById('gc-count').textContent = d.count)
         .catch(() => document.getElementById('gc-count').textContent = '?');
 </script>
+    <script src="gh-graph.js" data-username="ReitardXd" data-theme="dark"></script>
 </body>
 </html>
