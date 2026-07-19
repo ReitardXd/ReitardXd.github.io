@@ -368,6 +368,14 @@
         .then(d => document.getElementById('gc-count').textContent = d.count)
         .catch(() => document.getElementById('gc-count').textContent = '?');
 </script>
-    <script src="gh-graph.js" data-username="ReitardXd" data-theme="dark"></script>
+   <script src="gh-graph.js"></script>
+<script>
+    GitHubGraph.render({
+        username: "ReitardXd",
+        target: "#gh-graph",
+        theme: "dark",
+        colors: ["#2a2f36", "#0e4429", "#006d32", "#26a641", "#39d353"],
+    });
+</script>
 </body>
 </html>
