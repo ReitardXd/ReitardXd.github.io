@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — pranav roy</title>
+    <link rel="icon" type="image/png" href="assets/images/cirno.png">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .overlay {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 2rem 3rem;
+        }
+
+        h1 {
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: #000;
+            line-height: 2;
+        }
+
+        a {
+            color: #000;
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="assets/gifs/fumodance-cirno-slow.webm" type="video/webm">
+    </video>
+    <div class="overlay">
+        <h1>error 404 — page not found<br>baka</h1>
+        <a href="/">go back home</a>
+    </div>
+</body>
+</html>
