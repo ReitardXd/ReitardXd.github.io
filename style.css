@@ -1,8 +1,10 @@
 @font-face {
     font-family: 'Matisse';
-    src: url('assets/fonts/matisse/FOT-Matisse Pro EB.otf') format('opentype');
+    src: url('assets/fonts/matisse/FOT-Matisse Pro EB.woff2') format('woff2'),
+         url('assets/fonts/matisse/FOT-Matisse Pro EB.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 *, *::before, *::after {

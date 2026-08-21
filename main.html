@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pranav roy</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="preload" href="assets/images/evangelion.png" as="image">
+    <link rel="preload" href="assets/images/evangelion.webp" as="image" type="image/webp">
 <link rel="icon" type="image/jpeg" href="assets/images/cirno.png">
 <script data-goatcounter="https://chungus.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-<link rel="preload" href="assets/images/darkevangelion.webp" as="image">
+<script>
+    if (localStorage.getItem('theme') === 'dark') {
+        const darkBg = document.createElement('link');
+        darkBg.rel = 'preload';
+        darkBg.href = 'assets/images/darkevangelion.webp';
+        darkBg.as = 'image';
+        darkBg.type = 'image/webp';
+        document.head.appendChild(darkBg);
+    }
+</script>
 </head>
 <body>
 <button id="theme-toggle">day</button>
@@ -101,22 +110,22 @@
                     <h2>elsewhere</h2>
                     <div class="links-row">
     <a href="https://github.com/ReitardXd" target="_blank" rel="noopener">
-        <img src="assets/images/icons/github.svg" alt="github" width="16" height="16"> github
+        <img src="assets/images/icons/github.svg" alt="github" width="16" height="16" decoding="async"> github
     </a>
     <a href="https://codeforces.com/profile/tormented_mizoguchi" target="_blank" rel="noopener">
-        <img src="assets/images/icons/codeforces.svg" alt="codeforces" width="16" height="16"> codeforces
+        <img src="assets/images/icons/codeforces.svg" alt="codeforces" width="16" height="16" decoding="async"> codeforces
     </a>
     <a href="https://profile.hackthebox.com/profile/019c7100-ffff-7323-980c-d8a52d88b59a" target="_blank" rel="noopener">
-        <img src="assets/images/icons/hackthebox.svg" alt="hackthebox" width="16" height="16"> hackthebox
+        <img src="assets/images/icons/hackthebox.svg" alt="hackthebox" width="16" height="16" decoding="async"> hackthebox
     </a>
     <a href="https://leetcode.com/u/zVBNBlfW5U/" target="_blank" rel="noopener">
-        <img src="assets/images/icons/leetcode.svg" alt="leetcode" width="16" height="16"> leetcode
+        <img src="assets/images/icons/leetcode.svg" alt="leetcode" width="16" height="16" decoding="async"> leetcode
     </a>
   <a href="https://www.linkedin.com/in/pranav-r-4b2661209/" target="_blank" rel="noopener">
         linkedin
     </a>
     <a href="assets/resume/pranavresume.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/icons/readme.svg" alt="resume" width="16" height="16"> resume
+        <img src="assets/images/icons/readme.svg" alt="resume" width="16" height="16" decoding="async"> resume
     </a> 
 </div>
                 </section>
@@ -124,11 +133,11 @@
                 <section id="setup" class="glass">
                     <h2>setup</h2>
                     <div class="setup-grid">
-    <div><span class="setup-label">os</span><span><img src="assets/images/icons/archlinux.svg" alt="arch" width="14" height="14"> arch linux</span></div>
-    <div><span class="setup-label">wm</span><span><img src="assets/images/icons/dwm.svg" alt="dwm" width="14" height="14"> rwm</span></div>
-    <div><span class="setup-label">shell</span><span><img src="assets/images/icons/zsh.svg" alt="zsh" width="14" height="14"> zsh</span></div>
-    <div><span class="setup-label">terminal</span><span><img src="assets/images/icons/st.svg" alt="st" width="14" height="14"> st</span></div>
-    <div><span class="setup-label">editor</span><span><img src="assets/images/icons/neovim.svg" alt="neovim" width="14" height="14"> nvim / <img src="assets/images/icons/gnuemacs.svg" alt="emacs" width="14" height="14"> emacs</span></div>
+    <div><span class="setup-label">os</span><span><img src="assets/images/icons/archlinux.svg" alt="arch" width="14" height="14" decoding="async"> arch linux</span></div>
+    <div><span class="setup-label">wm</span><span><img src="assets/images/icons/dwm.svg" alt="dwm" width="14" height="14" decoding="async"> rwm</span></div>
+    <div><span class="setup-label">shell</span><span><img src="assets/images/icons/zsh.svg" alt="zsh" width="14" height="14" decoding="async"> zsh</span></div>
+    <div><span class="setup-label">terminal</span><span><img src="assets/images/icons/st.svg" alt="st" width="14" height="14" decoding="async"> st</span></div>
+    <div><span class="setup-label">editor</span><span><img src="assets/images/icons/neovim.svg" alt="neovim" width="14" height="14" decoding="async"> nvim / <img src="assets/images/icons/gnuemacs.svg" alt="emacs" width="14" height="14" decoding="async"> emacs</span></div>
 </div>
                 </section>
 <section id="blog" class="glass">
@@ -281,7 +290,7 @@
     <div class="webring">
         <a href="https://ring.seggs.lol/redirect?from=reitardxd&dir=prev">← prev</a>
         <a href="https://ring.seggs.lol/random">
-            <img src="assets/images/threadlocked.png" alt="threadlocked webring" width="88" height="31">
+            <img src="assets/images/threadlocked.png" alt="threadlocked webring" width="88" height="31" loading="lazy" decoding="async">
         </a>
         <a href="https://ring.seggs.lol/redirect?from=reitardxd&dir=next">next →</a>
     </div>
@@ -290,26 +299,26 @@
 
 <div class="badges">
     <a href="https://archlinux.org/" target="_blank" rel="noopener">
-        <img src="assets/gifs/archlinux.gif" alt="arch linux" width="88" height="31">
+        <img src="assets/gifs/archlinux.gif" alt="arch linux" width="88" height="31" loading="lazy" decoding="async">
     </a>
     <a href="https://www.youtube.com/watch?v=KZDXOmluoe8" target="_blank" rel="noopener">
-        <img src="assets/gifs/caramelldansen.gif" alt="caramelldansen" width="88" height="31">
+        <img src="assets/gifs/caramelldansen.gif" alt="caramelldansen" width="88" height="31" loading="lazy" decoding="async">
     </a>
     <a href="https://sspx.org/en" target="_blank" rel="noopener">
-        <img src="assets/gifs/eucharist.gif" alt="eucharist" width="88" height="31">
+        <img src="assets/gifs/eucharist.gif" alt="eucharist" width="88" height="31" loading="lazy" decoding="async">
     </a>
     <a href="https://www.youtube.com/watch?v=o6wtDPVkKqI" target="_blank" rel="noopener">
-        <img src="assets/gifs/evangelion.gif" alt="evangelion" width="88" height="31">
+        <img src="assets/gifs/evangelion.gif" alt="evangelion" width="88" height="31" loading="lazy" decoding="async">
     </a>
     <a href="https://larbs.xyz/" target="_blank" rel="noopener">
-        <img src="assets/gifs/larbs.gif" alt="larbs" width="88" height="31">
+        <img src="assets/gifs/larbs.gif" alt="larbs" width="88" height="31" loading="lazy" decoding="async">
     </a>
 </div>
 </footer>
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script>
         const audio = document.getElementById('audio');
         const playBtn = document.getElementById('play-btn');
@@ -371,13 +380,15 @@
         .then(d => document.getElementById('gc-count').textContent = d.count)
         .catch(() => document.getElementById('gc-count').textContent = '?');
 </script>
-   <script src="gh-graph.js"></script>
+   <script src="gh-graph.js" defer></script>
 <script>
-    GitHubGraph.render({
-        username: "ReitardXd",
-        target: "#gh-graph",
-        theme: "dark",
-        colors: ["#2a2f36", "#0e4429", "#006d32", "#26a641", "#39d353"],
+    document.addEventListener('DOMContentLoaded', function () {
+        GitHubGraph.render({
+            username: "ReitardXd",
+            target: "#gh-graph",
+            theme: "dark",
+            colors: ["#2a2f36", "#0e4429", "#006d32", "#26a641", "#39d353"],
+        });
     });
 </script>
 </body>
