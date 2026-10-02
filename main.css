@@ -162,7 +162,7 @@ h2 {
     border-color: rgba(255,255,255,0.2);
 }
 
-.project-card.wip { opacity: 0.45; }
+.project-card.wip { opacity: 0.7; }
 
 .project-header {
     display: flex;
@@ -492,3 +492,4 @@ body[data-theme="dark"] {
     object-fit: cover;
     z-index: -1;
 }
+
