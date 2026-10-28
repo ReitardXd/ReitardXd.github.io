@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Roy — candidate profile</title>
+    <style>
+        @font-face { font-family: Matisse; src: url('assets/fonts/matisse/FOT-Matisse Pro EB.woff2') format('woff2'); }
+        :root { color-scheme: dark; --muted: #8d8d8d; --line: #252525; --accent: #d9c49a; }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: #000; color: #eee; font: 15px/1.65 Matisse, Georgia, serif; }
+        main { width: min(920px, calc(100% - 40px)); margin: 0 auto; padding: 12vh 0 10vh; }
+        header { display: flex; justify-content: space-between; align-items: end; gap: 2rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
+        h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 4.5rem); font-weight: normal; letter-spacing: -.04em; line-height: 1; }
+        .role, dt, .label { color: var(--muted); font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; }
+        .role { margin: .8rem 0 0; }
+        .availability { color: var(--accent); white-space: nowrap; }
+        section { padding: 2.25rem 0; border-bottom: 1px solid var(--line); }
+        h2 { margin: 0 0 1.25rem; color: var(--muted); font-size: .72rem; font-weight: normal; letter-spacing: .18em; text-transform: uppercase; }
+        .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 4rem; }
+        dl { margin: 0; }
+        dt { margin-bottom: .2rem; }
+        dd { margin: 0; }
+        ul { display: grid; grid-template-columns: repeat(3, 1fr); gap: .45rem 2rem; margin: 0; padding: 0; list-style: none; }
+        li::before { content: '·'; color: var(--accent); margin-right: .55rem; }
+        a { color: var(--accent); text-underline-offset: .2em; }
+        .links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
+        footer { padding-top: 2rem; color: var(--muted); font-size: .85rem; }
+        @media (max-width: 620px) { main { width: min(100% - 28px, 920px); padding-top: 8vh; } header { display: block; } .availability { display: block; margin-top: 1.25rem; } .grid, ul { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <h1>Pranav Roy</h1>
+                <p class="role">Computer science · systems · security</p>
+            </div>
+            <span class="availability">open to SDE opportunities</span>
+        </header>
+
+        <section>
+            <h2>Profile</h2>
+            <div class="grid">
+                <dl><dt>College</dt><dd>SRM Institute of Science and Technology, Kattankulathur</dd></dl>
+                <dl><dt>Year</dt><dd>Fourth-year computer science undergraduate</dd></dl>
+                <dl><dt>Age</dt><dd>21</dd></dl>
+                <dl><dt>Focus</dt><dd>Systems programming, backend engineering, computer security, and low-level software.</dd></dl>
+            </div>
+        </section>
+
+        <section>
+            <h2>Achievements</h2>
+            <div class="grid">
+                <dl><dt>Codeforces</dt><dd>Candidate Master</dd></dl>
+                <dl><dt>Siebbersec CTF</dt><dd>16th place · <a href="https://ctftime.org/event/3299" target="_blank" rel="noopener">CTFtime ↗</a></dd></dl>
+                <dl><dt>Jane Street</dt><dd>Consistently solving the monthly puzzles</dd></dl>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical stack</h2>
+            <div class="grid">
+                <dl><dt>Languages</dt><dd>C / C++ · Rust · Go · Python · JavaScript · SQL · Bash</dd></dl>
+                <dl><dt>Web &amp; backend</dt><dd>MERN stack · FastAPI · Streamlit · PostgreSQL · Redis</dd></dl>
+                <dl><dt>Infrastructure</dt><dd>Docker · Kubernetes · Prometheus · Linux (Arch) · Git</dd></dl>
+                <dl><dt>Systems &amp; security</dt><dd>POSIX · TCP/IP · X11 · Cisco DNAC API · GDB · OpenGL / GLFW · reverse engineering · binary exploitation</dd></dl>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected work</h2>
+            <div class="grid">
+                <dl><dt>nbody</dt><dd>C++ / OpenGL gravitational simulator</dd></dl>
+                <dl><dt>rwm</dt><dd>Rust tiling window manager</dd></dl>
+                <dl><dt><a href="https://seca-xi.vercel.app" target="_blank" rel="noopener">seca ↗</a></dt><dd>React / Node.js social reading platform</dd></dl>
+                <dl><dt><a href="https://github.com/ReitardXd/sked" target="_blank" rel="noopener">sked ↗</a></dt><dd>Go distributed job scheduler · source</dd></dl>
+                <dl><dt>KWC <span class="label">(wip)</span></dt><dd>Computer-vision pipeline for drone imagery</dd></dl>
+            </div>
+        </section>
+
+        <footer>
+            <div class="links">
+                <a href="mailto:falkensmaze101@gmail.com">falkensmaze101@gmail.com</a>
+                <a href="https://github.com/ReitardXd" target="_blank" rel="noopener">github ↗</a>
+                <a href="assets/resume/resume.pdf" target="_blank" rel="noopener">resume ↗</a>
+                <a href="main.html">personal site ↗</a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

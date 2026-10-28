@@ -1,8 +1,8 @@
-// Splash screen: auto-enter after a short pause, or let visitors skip it.
+// Title card: continue to the audience prompt.
 const splash = document.getElementById('splash-screen');
 
 if (splash) {
-    const AUTO_DELAY_MS = 2000;
+    const AUTO_DELAY_MS = 1400;
     const FADE_DURATION_MS = 800;
     let leaving = false;
 
@@ -13,7 +13,7 @@ if (splash) {
         splash.classList.add('fade-out');
 
         setTimeout(function () {
-            window.location.href = 'main.html';
+            window.location.href = 'seperate.html';
         }, FADE_DURATION_MS);
     }
 

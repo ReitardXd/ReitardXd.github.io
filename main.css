@@ -478,3 +478,38 @@ body[data-theme="dark"] {
     object-fit: cover;
     z-index: -1;
 }
+
+/* ── RECRUITER PROFILE ── */
+.recruiter-hero {
+    height: 58vh;
+    align-items: center !important;
+}
+
+.recruiter-kicker {
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+    font-size: 0.68rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+}
+
+.recruiter-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+}
+
+.recruiter-nav {
+    margin: 0.5rem 0 0;
+    color: var(--fg-dim);
+    text-align: center;
+}
+
+.recruiter-nav a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .recruiter-columns { grid-template-columns: 1fr; }
+}
