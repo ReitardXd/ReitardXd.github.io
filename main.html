@@ -5,23 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pranav roy</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="preload" href="assets/images/evangelion.webp" as="image" type="image/webp">
 <link rel="icon" type="image/jpeg" href="assets/images/cirno.png">
 <script data-goatcounter="https://chungus.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-<script>
-    if (localStorage.getItem('theme') === 'dark') {
-        const darkBg = document.createElement('link');
-        darkBg.rel = 'preload';
-        darkBg.href = 'assets/images/darkevangelion.webp';
-        darkBg.as = 'image';
-        darkBg.type = 'image/webp';
-        document.head.appendChild(darkBg);
-    }
-</script>
 </head>
 <body>
-<button id="theme-toggle">day</button>
+<button id="theme-toggle">light</button>
 
     <!-- HERO -->
     <section id="hero">
@@ -72,7 +61,7 @@
       <div class="about-card">
     <p>Current goals:</p>
     <p>1. Get an SDE job (if you are a recruiter reading this and think i am a good fit, please
-        <a href="mailto:falkensmaze101@gmail.com" class="email-link">send me an email</a>).
+        <a href="mailto:pranav.k.roy161@gmail.com" class="email-link">send me an email</a>).
     </p> 
     <p>2. Start participating in CTFs again.</p>
 </div>
@@ -146,7 +135,7 @@
 </section>
                 <section id="contact" class="glass">
                     <h2>contact</h2>
-                    <a href="mailto:falkensmaze101@gmail.com" class="email-link">falkensmaze101@gmail.com</a>
+                    <a href="mailto:pranav.k.roy161@gmail.com" class="email-link">pranav.k.roy161@gmail.com</a>
                 </section>
 
             </div>
@@ -359,15 +348,15 @@
     </script>
     <script>
         const toggle = document.getElementById('theme-toggle');
-        const saved = localStorage.getItem('theme') || 'light';
+        const saved = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
         document.body.dataset.theme = saved;
-        toggle.textContent = saved === 'dark' ? 'day' : 'night';
+        toggle.textContent = saved === 'dark' ? 'light' : 'dark';
 
         toggle.addEventListener('click', () => {
             const next = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
             document.body.dataset.theme = next;
             localStorage.setItem('theme', next);
-            toggle.textContent = next === 'dark' ? 'day' : 'night';
+            toggle.textContent = next === 'dark' ? 'light' : 'dark';
         });
     </script>
 <script>
@@ -379,12 +368,17 @@
    <script src="gh-graph.js" defer></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        GitHubGraph.render({
-            username: "ReitardXd",
-            target: "#gh-graph",
-            theme: "dark",
-            colors: ["#2a2f36", "#0e4429", "#006d32", "#26a641", "#39d353"],
-        });
+        const pal = {
+            dark:  ["#3c3836", "#427b58", "#689d6a", "#8ec07c", "#b8bb26"],
+            light: ["#ebdbb2", "#b8bb26", "#98971a", "#79740e", "#427b58"]
+        };
+        const draw = () => {
+            const t = document.body.dataset.theme === 'light' ? 'light' : 'dark';
+            document.getElementById('gh-graph').innerHTML = '';
+            GitHubGraph.render({ username: "ReitardXd", target: "#gh-graph", theme: t, colors: pal[t] });
+        };
+        draw();
+        document.getElementById('theme-toggle').addEventListener('click', draw);
     });
 </script>
 </body>
